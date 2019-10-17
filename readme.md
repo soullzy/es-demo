@@ -1,17 +1,19 @@
-##document
+# es note
+
+###document
 https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html
 
-##api document
+###api document
 https://www.elastic.co/guide/en/elasticsearch/client/index.html
-
-##ik analysis
+	
+###ik analysis
 https://github.com/medcl/elasticsearch-analysis-ik/releases
 
-##note
+###note
 [参考文档1](https://blog.csdn.net/chen_2890/article/details/83895646)
 [参考文档2](https://blog.csdn.net/yejingxuan01/article/details/96312333)
 
-##常用操作
+###常用操作
 * （1）统计某个字段的数量
   *  ValueCountBuilder vcb=  AggregationBuilders.count("count_uid").field("uid");
 * （2）去重统计某个字段的数量（有少量误差）
