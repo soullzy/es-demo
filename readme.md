@@ -1,19 +1,19 @@
 # es note
 
-###document
+### document
 https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html
 
-###api document
+### api document
 https://www.elastic.co/guide/en/elasticsearch/client/index.html
 	
-###ik analysis
+### ik analysis
 https://github.com/medcl/elasticsearch-analysis-ik/releases
 
-###note
+### note
 [参考文档1](https://blog.csdn.net/chen_2890/article/details/83895646)
 [参考文档2](https://blog.csdn.net/yejingxuan01/article/details/96312333)
 
-###常用操作
+### 常用操作
 * （1）统计某个字段的数量
   *  ValueCountBuilder vcb=  AggregationBuilders.count("count_uid").field("uid");
 * （2）去重统计某个字段的数量（有少量误差）
@@ -39,7 +39,7 @@ https://github.com/medcl/elasticsearch-analysis-ik/releases
 * （12）反转嵌套
   *AggregationBuilders.reverseNested("res_negsted").path("kps ");
 
-#示例  
+## 示例  
 ```java
 TransportClient client = new PreBuiltTransportClient(Settings.EMPTY)
         .addTransportAddress(new TransportAddress(InetAddress.getByName("host1"), 9300))
