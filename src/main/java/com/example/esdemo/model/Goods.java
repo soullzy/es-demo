@@ -11,7 +11,7 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
  * @date 2019/10/15
  * @since JDK1.8
  */
-@Document(indexName = "es-goods", type = "docs", shards = 1, replicas = 0)
+@Document(indexName = "es-goods", type = "doc-goods", shards = 1, replicas = 0)
 public class Goods implements Serializable {
   @Id
   private Long id;
